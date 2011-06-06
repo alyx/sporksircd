@@ -1,0 +1,4 @@
+The SporksIRCD Mercurial repository can be checked out using the
+following command:
+	hg clone http://hg.sporksmoo.net/sporksircd/ sporksircd
+

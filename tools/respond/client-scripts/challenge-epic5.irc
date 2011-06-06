@@ -1,0 +1,60 @@
+if (word(2 $loadinfo()) != 'pf') {
+	load -pf $word(1 $loadinfo());
+	return;
+};
+
+#	Copyright (c) 2006 David B. Kratter (BlackJac@EFNet)
+
+#	Version: 3.0.2006.01.29.1
+
+#	Requires: EPIC5
+
+addset challenge_bin str;
+set challenge_bin ~/.irc/ratbox-respond;
+
+addset challenge_key str;
+set challenge_key ~/.irc/private.key;
+
+addset challenge_pass int;
+set challenge_pass 1;
+
+alias challenge (nick default "$servernick()", void) {
+	quote challenge $nick;
+};
+
+^on ^740 "*" {
+	@ challenge.recv #= *1;
+};
+
+^on ^741 "*" {
+	@ :bin = getset(challenge_bin);
+	@ :key = getset(challenge_key);
+	if (fexist($bin) == 1 && fexist($key) == 1) {
+		^exec -name challenge $bin $key;
+		if (getset(challenge_pass)) {
+			input -noecho "Enter passphrase for CHALLENGE: " {
+				^msg %challenge $*;
+				^msg %challenge $challenge.recv;
+			};
+		} else {
+			^msg %challenge \n;
+			^msg %challenge $challenge.recv;
+		};
+	} else {
+		xecho -b Unable to find "$after(-1 / $bin)" or "$after(-1 / $key)";
+		@ challenge.recv = [];
+	};
+};
+
+^on ^exec "challenge *" {
+	if (*2) {
+		xecho -b $1-;
+	} else {
+		quote challenge +$1;
+	};
+	@ challenge.recv = [];
+};
+
+^on ^exec_exit "challenge *" #;
+
+# EOF

@@ -1,0 +1,20 @@
+README for the third-party patches to SporksIRCD
+================================================
+
+This is the third-party patches section of SporksIRCD.
+These patches were all discluded from going mainline for one reason or
+another. 
+
+You should mv them one directory up and apply them like:
+
+            patch -p1 < patch-name.patch
+
+
+Current Patch List:
+===================
+
+sporksircd-atheme.patch:
+This integrates SporksIRCD with atheme. It adds the protocol module to atheme
+to allow support for founders and our specific features. Patching atheme can be
+done similar to the above procedure, except it should be done to atheme's
+source tree.

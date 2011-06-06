@@ -1,0 +1,448 @@
+\chapter{Extensions}
+\label{extensions}
+
+\section{Channel mode extensions}
+\label{chmextensions}
+
+	These extensions add various additional channel modes.
+
+\subsection{chm\_adminonly, admins only (+A)}
+
+	Adds +A, which blocks users who are not admins from joining a channel.
+
+\subsection{chm\_blockcaps, restrict use of caps (+G)}
+
+	Adds +G, which blocks all messages that contain too many uppercase
+	letters.  The maximum percentage of caps allowed in a message is
+	controlled by \nolinkurl{blockcaps::threshold}.
+	\subsubsection{configuration}
+	\begin{verbatim}
+	blockcaps {
+	        threshold = 75;
+	};
+	\end{verbatim}
+
+\subsection{chm\_censor, censored words list (+y)}
+
+	Adds +y, which allows channel operators to block specific words,
+	phrases, or patterns from being used in a channel.  The configuration
+	option \nolinkurl{censor::max\_censors} controls how many censors may
+	be set in a channel, and \nolinkurl{censor::\_max\_censors\_large}
+	controls the number of censors that may be set in a +L channel.
+	\subsubsection{configuration}
+		\begin{verbatim}
+		censor {
+		        max_censors = 25;
+		        max_censors_large = 250;
+		};
+		\end{verbatim}
+
+\subsection{chm\_censor\_operonly, restrict censor to opers (+W)}
+
+	When this extension is loaded, channel operators may not use censor
+	lists unless an oper sets +W on the channel.
+
+	\notebox{Note}{This module is going away eventually.}
+
+\subsection{chm\_nocolour, strip colour codes and other control codes (+c)}
+
+	Adds +c, which strips coluor codes and control codes from messages
+	sent to a channel.
+
+\subsection{chm\_noctcp, no channel-wide CTCP (+C)}
+
+	Adds +C, which blocks all CTCP messages sent to a channel (except
+	for ACTION, used by the /me command).
+
+\subsection{chm\_nonotices, no channel NOTICEs (+T)}
+
+	Adds +T, which blocks all channel-wide NOTICEs.
+
+\subsection{chm\_norepeat, no repeat messages (+K)}
+
+	Adds +K, which filters any repeated messages.
+
+\subsection{chm\_operonly, oper-only channel (+O)}
+
+	Adds +O, which allows opers to block all users who are not opers
+	from joining.
+
+\subsection{chm\_operonly\_compat}
+
+	Aliases +O to +b \$~o, which bans all non-opers.
+
+	This requires \nolinkurl{extensions/extb\_opers.so}.
+
+\subsection{chm\_quiet\_unreg\_compat}
+
+	Aliases +R to +q \$~a, which mutes all unidentified users.
+
+	This requires \nolinkurl{extensions/extb\_account.so}.
+
+\subsection{chm\_sslonly, SSL-only channel (+S)}
+
+	This mode blocks all users who are not using SSL.
+
+\subsection{chm\_sslonly\_compat}
+
+	Aliases +S to +b \$~z, which bans all users not using SSL.
+
+	This requires \nolinkurl{extensions/extb\_ssl.so}.
+
+
+\section{Usermode extensions}
+\label{umodeextensions}
+
+\subsection{usm\_botmode}
+
+	Adds usermode +B, which allows a user to be identified as a bot.
+	This confers no additional restrictions or privileges.
+
+\subsection{usm\_ip\_cloaking}
+
+	Adds usermode +x, which scrambles a user's real IP or hostname in WHOIS.
+	Opers will still be able to see real IPs and hostnames on a separate line in
+	WHOIS. To set +x on all users automatically, add +x to general::default\_umodes in
+	ircd.conf
+
+\subsection{usm\_override}
+
+	Gives opers with the oper:override flag the ability to temporarily set usermode +p,
+	which grants operator privileges on all channels as well as the ability to bypass
+	bans, quiets, and other modes.  This expires after the time configured by the
+	\nolinkurl{override::expire\_time} setting in ircd.conf, unless it is set
+	to 0, in which case it will not expire. Additionally, if \nolinkurl{override::make\_immune}
+	is true, then opers with +p cannot be kicked.
+	\subsubsection{configuration}
+		\begin{verbatim}
+		override {
+		        expire_time = 5 minutes;
+		        make_immune = no;
+		};
+		\end{verbatim}
+
+
+\section{Extended ban extensions}
+\label{extbextensions}
+
+	These extensions add support for various extended ban masks
+	(extbans).
+
+\subsection{extb\_account}
+
+	Adds the \$a extban, which can be used in one of two ways.
+	The first way, \$a, matches all identified users.  The second,
+	\$a:<account> matches only users with a matching account name.
+	Like all other extbans, this can be negated with a tilde (~),
+	so that \$~a matches all unregistered and unidentified users.
+
+\subsection{extb\_canjoin}
+
+	Adds the \$j:<channel> extban, which matches users who can
+	join a specifiedchannel.  It can be used to effectively
+	synchronise the ban, quiet, exempt, and invex lists of a channel
+	with those of another channel.  Like all other extbans, matches
+	can be negated with a tilde (~), such that \$~j:<channel> matches
+	all users who cannot join the specified channel.
+
+\subsection{extb\_channel}
+
+	Adds the \$c:<channel> extban, which matches users who are in
+	a specified channel.  Matches can be negated with a tilde (~), so
+	\$~c:<channel> matches all users who are not in the specified channel.
+
+	If the channel specified is +s or +p, then this extban will not match
+	regardless of whether or not the user being checked is in the specified
+	channel.
+
+\subsection{extb\_extgecos}
+
+	Adds the \$x:<nick!user@host\#realname> extban, which extends the normal
+	nick!user@host mask to include a realname.  In addition, the separators
+	(!, @, and \#) are not mandatory as they are in normal masks.  This extban
+	may be negated by placing a tilde (~) after the dollar sign (\$).
+
+\subsection{extb\_oper}
+
+	This adds the \$o extban, which matches all opers.  The opposite form,
+	\$~o, matches all non-opers.
+
+\subsection{extb\_realname}
+
+	Adds the \$r:<realname> extban, which matches any user with a realname
+	matching the specified realname pattern.  This extban can also be negated
+	with a tilde (~) placed after the dollar sign (\$).
+
+\subsection{extb\_server}
+
+	Adds the \$s:<server> extban, which matches all users connected to a
+	specified server.  This extban can also be negated.
+
+\subsection{extb\_ssl}
+
+	Adds the \$z extban, which matches all users who are connected using SSL.
+	It can be used to make a channel SSL-only by banning \$~z.
+
+
+\section{Command extensions}
+\label{cmdextensions}
+
+	These extensions add support for various commands.
+
+\subsection{m\_adminwall}
+
+	Adds /ADMINWALL , which works like operwall, but can only be sent and
+	received by admins.
+
+	Syntax: \command{ADMINWALL} \userliteral{message}
+
+\subsection{m\_chgflags}
+
+	Adds /CHGFLAGS, which allows an oper to grant various auth\{\} block flags
+	to regular users.  Its use requires the oper:grant flag.
+
+	Syntax: \command{CHGFLAGS} \userliteral{user} \userliteral{flags}
+
+\subsection{m\_cycle}
+
+	Adds /CYCLE, which allows a user to part then join a channel instantaneously.
+
+	Syntax: \command{CYCLE} \userliteral{channel}
+
+\subsection{m\_findforwards}
+
+	Adds /FINDFORWARDS, which allows opers and chanops to find a channel's forwards.
+
+	Syntax: \command{FINDFORWARDS} \userliteral{channel}
+
+\subsection{m\_forcejoin}
+
+	Allows opers with the oper:force flag to force a user to join a channel.
+
+	Syntax: \command{FORCEJOIN} \userliteral{nick} \userliteral{channel}
+
+\subsection{m\_forcenick}
+
+	Allows opers with the oper:force flag to forcibly change a user's nick.
+
+	Syntax: \command{FORCENICK} \userliteral{oldnick} \userliteral{newnick}
+
+\subsection{m\_forcepart}
+
+	Allows opers with the oper:force flag to force a user to part a channel.
+
+	Syntax: \command{FORCEPART} \userliteral{nick} \userliteral{channel} [:\userliteral{reason}]
+
+\subsection{m\_forcequit}
+
+	Allows opers with the oper:force flag to force a user to quit.  Note that this may
+	be abusive.
+
+	\notebox{Note}{
+		This module lives under unsupported.
+	}
+
+	Syntax: \command{FORCEQUIT} \userliteral{nick} [:\userliteral{reason}]
+
+\subsection{m\_identify}
+
+	Allows identifying to NickServ or ChanServ by using /IDENTIFY.
+
+	Syntax: \command{IDENTIFY} \userliteral{nick|channel} \userliteral{password}
+
+\subsection{m\_mkpasswd}
+
+	Allows a user to generate a password hash that may be used in the ircd config.
+	The supported hash types are SHA256, SHA512, BLOWFISH, and MD5.
+
+	Syntax: \command{MKPASSWD} \userliteral{password} \userliteral{hashtype}
+
+\subsection{m\_oaccept}
+
+	Allows opers to forcibly add themselves to a user's ACCEPT list.
+
+	Syntax: \command{OACCEPT} \userliteral{nick}
+
+\subsection{m\_ojoin}
+
+	Allows opers to join any channel regardless of any modes or bans set on the
+	channel.
+
+	Syntax: \command{OJOIN} [\userliteral{status}]\userliteral{channel}
+
+\subsection{m\_olist}
+
+	Allows opers to view all channels including hidden ones. Requires oper:spy.
+
+	Syntax: \command{OLIST}
+
+\subsection{m\_opme}
+
+	Allows admins to op themselves on opless channels.
+
+	Syntax: \command{OPME} \userliteral{channel}
+
+\subsection{m\_omode}
+
+	Allows admins to change modes on any channel.
+
+	Syntax: \command{OMODE} \userliteral{channel} \userliteral{modestring}
+
+\subsection{m\_roleplay}
+
+	Adds many roleplay commands for use on channels with +N set.
+
+	\subsubsection{roleplay commands}
+		\command{SCENE} \userliteral{channel} \userliteral{scene-description}
+		\command{FSAY} \userliteral{channel} \userliteral{nick} :\userliteral{message}
+		\command{FACTION} \userliteral{channel} \userliteral{nick} :\userliteral{action}
+		\command{NPC} \userliteral{channel} \userliteral{npc-name} :\userliteral{message}
+		\command{NPCA} \userliteral{channel} \userliteral{npc-name} :\userliteral{action}
+
+	Note that FSAY and FACTION are only allowed if m\_roleplay.c is compiled with the
+	ABUSIVE\_ROLEPLAY macro defined.
+
+\subsection{m\_remove}
+
+	Allows channel operators to use the REMOVE command, which forces a user to part a channel.
+	Unlike a KICK, a REMOVE is seen by other users in the channel and the target as a regular PART.
+	Because it uses PART in a nonstandard way, it may cause some clients to malfunction, but this
+	does have the effect of defeating most clients' autorejoin capabilities.
+
+	A REMOVE will be translated as a KICK for servers on the network that do not have \nolinkurl{extensions/m\_remove.so}
+	loaded.
+
+	Syntax: \command{REMOVE} \userliteral{channel} \userliteral{nick} [:\userliteral{reason}]
+
+\subsection{m\_sendbans}
+
+	Allows opers with the ability to remotely set bans, resvs, and xlines to send
+	resvs and xlines to remote servers.  This module probably is not needed.
+
+	Syntax: \command{SENDBANS} \userliteral{server-mask}
+
+\subsection{m\_webirc}
+
+	Adds support for WEBIRC, which allows a web-based gateway to send a user's real IP or
+	hostname to the server.  To use it, copy the following config block into your ircd.conf
+	and edit it to meet your needs:
+
+\begin{verbatim}
+auth {
+	/* user: webirc@IP.OF.YOUR.WEBIRC . the webirc@ part is required */
+	user = "webirc@192.168.1.1";
+	password = "<password>";
+	/* The spoof must be set to "webirc." in order to work */
+	spoof = "webirc.";
+	class = "users";
+};
+\end{verbatim}
+
+
+\section{Server notice mask extensions}
+\label{snoextensions}
+
+	These extensions add support for various server notice masks (snomasks).
+
+\subsection{sno\_farconnect, +F}
+
+	Allows opers to use snomask +F, which shows remote connections and quits.
+
+\subsection{sno\_globalkline}
+
+	Notifies opers of global K/D/X-lines.
+
+\subsection{sno\_globaloper}
+
+	Notifies opers when remote opers sign in.
+
+\subsection{sno\_whois, +W}
+
+	Notifies opers who are using snomask +W when someone uses WHOIS on them.
+
+\subsection{sno\_channeljoin, +j}
+
+	Notifies opers who are using snomask +j when someone joins or parts a channel.
+
+
+\section{Spy extensions}
+
+	These extensions notify opers with the oper:spy flag and the +y snomask
+	when certain commands are run.
+
+\subsection{spy\_admin\_notice}
+
+	Notifies opers when ADMIN is used.
+
+\subsection{spy\_info\_notice}
+
+	Notifies opers when INFO is used.
+
+\subsection{spy\_links\_notice}
+
+	Notifies opers when LINKS is used.
+
+\subsection{spy\_motd\_notice}
+
+	Notifies opers when MOTD is used.
+
+\subsection{spy\_stats\_notice}
+
+	Notifies opers when STATS is used.
+
+\subsection{spy\_stats\_p\_notice}
+
+	Notifies opers when STATS p is used, which lists online opers.
+	It will not notify opers when any other STATS are requested.
+	Note that this will generate two notices for STATS p if
+	\nolinkurl{extensions/spy\_stats\_notice.so} is also loaded.
+
+\subsection{spy\_trace\_notice}
+
+	Notifies opers when TRACE is used.
+
+
+\section{Other extensions}
+\label{miscextensions}
+
+	These extensions do not fit into any of the above categories.
+
+\subsection{createauthonly}
+
+	Only allows users who have identified with services to create channels.
+
+\subsection{createoperonly}
+
+	Only allows opers to create channels.
+
+\subsection{example\_module}
+
+	An example module.  This does nothing useful.
+
+\subsection{force\_user\_invis}
+
+	Forces users to always have usermode +i set.
+
+\subsection{hurt}
+
+	Adds the HURT system, which allows opers to require that users matching
+	certain masks identify immediately or be disconnected.  Setting a HURT
+	requires oper:kline, while removing it via HEAL requires oper:unkline.
+
+	HURT Syntax: \command{HURT} \userliteral{ip} \userliteral{expire-time} :\userliteral{reason}
+
+	HEAL Syntax: \command{HEAL} \userliteral{(ip|nick)}
+
+	\notebox{Note}{
+		Hurts are not bursted and are not saved to bandb. This will be
+		fixed in a later version.
+	}
+
+\subsection{no\_locops}
+
+	Forbids opers from using usermode +l, which allows sending and receiving LOCOPS.
+
+\subsection{no\_oper\_invis}
+
+	Forbids opers from using usermode +i.
+

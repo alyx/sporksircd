@@ -1,0 +1,27 @@
+/ = in progress, x = done, ? = to be discussed, F = long-term
+[F] finish legacy code removal
+    [ ] client.c, channel.c is very 2.8 style still. it'd be nice to pack them
+        into their own namespace and such. moreover, the other 2.8 code needs
+        similar rewriting/reworking too...
+    [ ] rewrite s_auth.c
+        [ ] authentication state/lock manager
+        [ ] move resolver/auth checker code into separated modules 
+[F] Module engine rework
+    [ ] MODULE_DEPEND and MODULE_CONFLICT for building extension dependencies
+    [ ] make nick/user/host validation functions/match tables able to work in
+        separated modules, this will help us making support for native
+        characters sets/slashes in host etc
+    [ ] auth checker module
+    [ ] resolver module
+    [ ] move core modes into modules
+[/] test suite as in ircu
+[ ] Figure out how to pre-build lex/flex and yacc stuff so we don't need to
+    require them for the ircd
+[x] Add ability to add capabilities via module, like in Hybrid
+[x] Make remove a module
+[ ] Make halfop/owner/founder into server CAPs to facilitiate backwards compat.
+[/] Win32/Win64 support.
+[?] Channel flags (atheme's flags but in a channel mode)
+[ ] Save channel info (e.g. bans, topics, access lists, modes) for +P channels
+    in a persistent database rather than in memory only
+[x] IPv6 blacklist support (should also go upstream)

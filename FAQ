@@ -1,0 +1,37 @@
+SporksIRCD FAQ
+--------------
+Q: What are the differences between ShadowIRCD and SporksIRCD?
+A: SporksIRCD is generally more leinent on upstream features than ShadowIRCD
+   is. As a result, we include more goodies such as modularised censor, owner,
+   force* commands, and many cleanups/various enhancements.
+
+Q: Why doesn't SporksIRCD have remote includes?
+A: Remote Includes are a possible security risk due to possible MITM attacks
+   and such and do not prevent server owners making changes that you do not
+   want them to so they have little point. It is recommended to use rsync or a
+   git/hg cron job to pull in remote configuration files. We at SporksMoo use a
+   special system called confsync, which we have made open-source and can be
+   found at http://hg.sporksmoo.net/confsync.
+
+Q: Does SporksIRCD support Windows?
+A: No. Not now, at least. It may at some time in the future. It will require a
+   bit more work before Windows support is 100% useable.
+
+Q: I want shun, m_invisible, unreal-style m_spy, etc!
+A: m_spy is considered excessively abusive, as well as any "invisible" modes
+   that are of little legitimate use. We are a little more lenient than
+   upstream about implementing potentially "abusive" features, but they are
+   implemented with a clause that says "if you use this for evil, you cannot
+   use this module." We are fully within our legal rights to do so, as modules
+   are our own work.
+
+Q: What services should I run with SporksIRCD?
+A: We support atheme with a patch to include a SporksIRCD protocol module.
+   There is a patch in the patches/ directory.
+
+Q: I've got two servers linked and users on one are getting constant flood
+   notices when trying to send to channels. HELP!!!!
+A: Has your server's clock gone backwards massively recently? (probably due to it
+   being incorrect). If so, you have two options. You can either wait for the real
+   time to be what the incorrect time was, or you can restart the affected server.
+

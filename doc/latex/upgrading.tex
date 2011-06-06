@@ -1,0 +1,134 @@
+\chapter{Upgrading SporksIRCD}
+\label{Upgrading}
+
+Remember to consult reference.conf and example.conf \textbf{before} any and all
+upgrades, especially whilst reading this section.
+
+\section{Upgrading from 1.3 to 1.4}
+
+There have been numerous changes from 1.3 to 1.4. Please adjust your
+configuration files accordingly, and take note of any differences in syntax.
+
+\subsection{Module changes}
+
+Some modules have changed, or have been renamed from 1.3 to 1.4:
+
+\begin{itemize}
+
+% Wow, these are FUGLY! Someone should fix this! I can't use LaTeX effectively
+% enough yet to make them look better --Elizabeth
+
+\item{\nolinkurl{botmode.so}, \nolinkurl{ip\_cloaking.so}, and
+      \nolinkurl{override.so} \\
+	These modules have had usm\_ prepended to their names, in line with the
+	chm\_* modes (these are USer Modes).
+}
+
+\item{\nolinkurl{chm\_censor.so} and \nolinkurl{chm\_censor\_operonly.so} \\
+	Censor is now a module, as well as the module to make it oper only.
+	Semantics are otherwise the same.
+}
+
+\item{\nolinkurl{m\_chgflags.so} \\
+	This module has been added to change a user's auth flags (backported
+	to 1.3 but unsupported in that version).
+}
+
+\item{\nolinkurl{m\_forcequit.so} \\
+	This module has been moved to unsupported. See the directions in
+	unsupported/ for more information.
+}
+
+\item{\nolinkurl{m\_remove.so} \\
+	This module exists as a module now for ircd-seven style /remove. Its
+	use is discouraged on moral grounds, but is nonetheless supported.
+}
+
+\item{\nolinkurl{sno\_channeljoin.so} \\
+	This module has been moved out of unsupported and can be used to view
+	channel join and part notices.
+}
+
+\item{\nolinkurl{m_grant.so} \\
+	This is a new built-in (non-extension) module allowing anyone with the
+	oper:grant privilege to give anyone else IRC operator status (this was
+	backported to 1.3). Note that this operator status is transient and
+	will go away after a disconnect.
+	There is also a corresponding ungrant command to remove IRC operator
+	status from a person. It has no effect on someone who isn't already an
+	operator. Integration with services is planned in a future version.
+}
+
+\end{itemize}
+
+\subsection{Configuration changes}
+
+Numerous configuration file changes have taken place between 1.3 and 1.4. Note
+that 1.3 files \textbf{must} be upgraded to 1.4 format for everything to work
+properly.
+
+\begin{itemize}
+
+\item{
+	Privset blocks now support an operstring field, which sets the default
+	oper string for that class. Note that operstring fields in oper blocks
+	will override this.
+}
+
+\item{
+	Account fields are now supported in oper blocks. This means that the
+	user's account name must match the given account name in order to be
+	able to oper up.
+}
+
+\item{
+	caps\_threshold in the channel block has been moved to the blockcaps
+	\{\} block as the threshold option. The semantics are otherwise the
+	same.
+}
+
+\item{
+	max\_censors and max\_censors\_large have been moved to the censor \{\}
+	block with the same semantics as before.
+}
+
+\item{
+	expire\_override\_time and make\_override\_immune have been moved to
+	the override \{\} block as the expire\_time and make\_immune settings,
+	with the same semantics.
+}
+
+\item{
+	Flood control settings are now configurable.
+	client\_flood\_burst\_rate, client\_flood\_burst\_max,
+	client\_flood\_message\_time, and client\_flood\_message\_num are all
+	configurable settings. The defaults for them are considered sane and
+	should not be changed unless you know what you are doing. However,
+	client\_flood\_max\_lines may be tweaked and
+	does what the old (removed) client\_flood option does.
+}
+
+\end{itemize}
+
+
+\subsection{Miscellaneous}
+
+These are miscellaneous changes you should be aware of, but are not necessarily
+major.
+
+\begin{itemize}
+
+\item{
+	DES is deprecated and will spew warnings if it is being used for
+	passwords. Please upgrade your passwords to a stronger hash function
+	(DES is easily cracked on modern machines).
+}
+
+\item{
+	IPv6 blacklists are now supported via a type parameter (must come
+	before the reason). Note not many blacklists support IPv6 yet and thus
+	the default is still IPv4.
+}
+
+\end{itemize}
+

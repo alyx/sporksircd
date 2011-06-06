@@ -1,0 +1,1364 @@
+changeset:   2236:5f13d034a443
+branch:      trunk
+tag:         tip
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Jan 20 02:30:50 2011 -0500
+summary:     Added tag sporksircd-1.2.3 for changeset 753e6d6e486f
+
+changeset:   2235:113191190c4e
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Jan 20 02:28:36 2011 -0500
+summary:     Added tag sporksircd-1.3.0-RC1 for changeset 8e66195214aa
+
+changeset:   2234:8e66195214aa
+branch:      trunk
+tag:         sporksircd-1.3.0-RC1
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Jan 20 02:28:30 2011 -0500
+summary:     Recall again...
+
+changeset:   2233:abe7f837cf48
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Jan 20 02:27:29 2011 -0500
+summary:     Fix compile again. My make is seriously broken here.
+
+changeset:   2232:483d0194ef60
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Jan 20 00:22:51 2011 -0500
+summary:     Make channel.h depend on s_conf.h and remove s_conf.h from places it was added. I'm not sure why I didn't do this in the first place.
+
+changeset:   2231:830370479713
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Jan 20 00:15:26 2011 -0500
+summary:     Added tag sporksircd-1.3.0-RC1 for changeset fa09d9bc3d29
+
+changeset:   2230:fa09d9bc3d29
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Jan 20 00:15:19 2011 -0500
+summary:     Recall RC1 and retag this as RC1.
+
+changeset:   2229:7704f6f9fb58
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Jan 20 00:14:08 2011 -0500
+summary:     Fix compile. I am seriously beginning to think my make is broken.
+
+changeset:   2228:c2b37290293f
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 23:06:35 2011 -0500
+summary:     Added tag sporksircd-1.3.0-RC1 for changeset 2e14b3aaee2c
+
+changeset:   2227:2e14b3aaee2c
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 23:06:23 2011 -0500
+summary:     Begin sporksircd-1.3.0-RC1.
+
+changeset:   2226:4188543bdeb1
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 23:02:39 2011 -0500
+summary:     Fix up can_send a little in m_part.
+
+changeset:   2225:0c913a7e213c
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 22:57:48 2011 -0500
+summary:     Make the m_omode error message more descript and insult the user even more (because political correctness is bullshit).
+
+changeset:   2224:568d16f871fe
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 22:51:05 2011 -0500
+summary:     ojoin: make an error message more uniform.
+
+changeset:   2223:c5f1f495d834
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 22:46:42 2011 -0500
+summary:     Remove old references to athemenet.
+
+changeset:   2222:5960bbc4ee6d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 21:48:17 2011 -0500
+summary:     How the fuck did I miss this...? Fuck you make. Fuck you with a rake.
+
+changeset:   2221:1c706fc9839e
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 21:42:31 2011 -0500
+summary:     Clarify a few messages in override..
+
+changeset:   2220:53cf0ee120ff
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 20:30:52 2011 -0500
+summary:     Some robustness fixes for m_topic.
+
+changeset:   2219:4ac87ca434fd
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 18:31:22 2011 -0500
+summary:     Update NEWS.
+
+changeset:   2218:1d3139729fd3
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 18:11:09 2011 -0500
+summary:     Fix a few formatting errors.
+
+changeset:   2217:495927bfe348
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 17:51:42 2011 -0500
+summary:     More TeX fixes. I'm a TeX noob -sigh-.
+
+changeset:   2216:c461d92b542a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 17:49:34 2011 -0500
+summary:     Fix underscore thing. Forgot you had to escape _ in TeX.
+
+changeset:   2215:8462174462c7
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 17:36:39 2011 -0500
+summary:     Document the ROLEPLAY subsystem.
+
+changeset:   2214:9a9e518cf3ca
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 17:14:58 2011 -0500
+summary:     New RPL_YOUREOPER that's less offensive for 1.3.0.
+
+changeset:   2213:6c7b10fe42b3
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 16:25:15 2011 -0500
+summary:     Added tag sporksircd-1.3.0-beta3 for changeset ff010fd74e54
+
+changeset:   2212:ff010fd74e54
+branch:      trunk
+tag:         sporksircd-1.3.0-beta3
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 16:25:07 2011 -0500
+summary:     beta3 is ready.
+
+changeset:   2211:b1aa8b5de818
+branch:      trunk
+user:        Andrew Wilcox <AWilcox@Wilcox-Tech.com>
+date:        Wed Jan 19 16:08:52 2011 -0500
+summary:     Implemented a few LaTeX helper commands to make the formatting much less ugly.
+
+changeset:   2210:9ad5d735643d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 15:55:59 2011 -0500
+summary:     Fix hyperlinks.
+
+changeset:   2209:917236973865
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 15:50:24 2011 -0500
+summary:     Split up the intro into sections properly.
+
+changeset:   2208:a1ce25c7d7db
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 15:48:17 2011 -0500
+summary:     Add notes about the conversion process and how we generate the HTML docs. Also clarify some language.
+
+changeset:   2207:8d094fa2d226
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 15:22:23 2011 -0500
+summary:     PPC fixes. BLEACH.
+
+changeset:   2206:534ed2b663bd
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 14:56:19 2011 -0500
+summary:     Forgot to update this.
+
+changeset:   2205:24ec33d14b04
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 14:55:34 2011 -0500
+summary:     Move m_blockcaps.c to chm_blockcaps. lstarnes missed this. Yes I know I shouldn't be doing this so late in the release cycle...
+
+changeset:   2204:51d51a3581b3
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 14:39:55 2011 -0500
+summary:     Update NEWS.
+
+changeset:   2203:23bf0a3e05ab
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 13:49:11 2011 -0500
+summary:     Move some docs to technical as they're of no interest to most users/client authors.
+
+changeset:   2202:10979784a005
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 13:36:11 2011 -0500
+summary:     Rework m_rehash a bit so it's not such a bloody hog. Update docs accordingly.
+
+changeset:   2201:0e05e7810790
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 10:52:27 2011 -0500
+summary:     Update typedefs in .indent.pro. This hasn't been done since I don't even want to know when.
+
+changeset:   2200:329774e6d781
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 10:37:29 2011 -0500
+summary:     Add vim swp files to hgignore, this nearly bit me in the arse earlier.
+
+changeset:   2199:8a992c682a4c
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 10:34:30 2011 -0500
+summary:     It appears indent(1) missed a comment block.
+
+changeset:   2198:d625d383073b
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 10:33:12 2011 -0500
+summary:     1) Run indent on reslib.c, eugh my god.
+
+changeset:   2197:45624ee76c9a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 02:15:53 2011 -0500
+summary:     More charybdis references so bugs don't get sent upstream that could be ours.
+
+changeset:   2196:b9244bb9d0ea
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Jan 19 02:13:35 2011 -0500
+summary:     Replace a reference to charybdis in a place.
+
+changeset:   2195:309ccb917f38
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 23:32:23 2011 -0500
+summary:     And commands.tex. Note more cleanups are needed. I just fixed the indenting in all this crap. I'll let Andrew handle the other cleanup.
+
+changeset:   2194:78456b0a1f12
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 23:05:15 2011 -0500
+summary:     Commit SporksIRCD.tex, intro.tex, and oprivs.tex. One more to go.
+
+changeset:   2193:5b076e13a039
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 22:40:56 2011 -0500
+summary:     Clean up cmodes.tex now.
+
+changeset:   2192:98506b0d9946
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 22:18:09 2011 -0500
+summary:     Reformat ucommands.tex
+
+changeset:   2191:6d07daa0e7be
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 21:35:39 2011 -0500
+summary:     Fix umodes.tex indentation.
+
+changeset:   2190:1a30c0f21ec1
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 21:34:54 2011 -0500
+summary:     Really fix hgignore.
+
+changeset:   2189:9a1942f23f7d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 21:31:58 2011 -0500
+summary:     Whoops.
+
+changeset:   2188:8668d2594157
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 21:30:43 2011 -0500
+summary:     Update hgignore.
+
+changeset:   2187:e03d39df354a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 20:19:26 2011 -0500
+summary:     Give the manpage some incredibly desperately needed love. I don't think this has been touched since before I was born (not even kidding)...
+
+changeset:   2186:caf8b5527466
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 19:51:08 2011 -0500
+summary:     Update send.txt with new ONLY_* stuff.
+
+changeset:   2185:b9a4f8482829
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 19:37:48 2011 -0500
+summary:     Add VERY roughly formatted LaTeX documentation for SporksIRCD and kill the SGML docs.
+
+changeset:   2184:a0fbac7384d6
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 16:27:51 2011 -0500
+summary:     Suggest a more reliable pastebin.
+
+changeset:   2183:5f3b997f5823
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 16:26:24 2011 -0500
+summary:     Added tag sporksircd-1.3.0-beta2 for changeset 8404c29ebc0c
+
+changeset:   2182:8404c29ebc0c
+branch:      trunk
+tag:         sporksircd-1.3.0-beta2
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 16:26:19 2011 -0500
+summary:     1.3.0-beta2 begins.
+
+changeset:   2181:6531957cd35d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 16:22:22 2011 -0500
+summary:     Change is_chanop_voiced to is_op_voiced (makes more sense), and *really* unbreak compile.
+
+changeset:   2180:8cb1c760622a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 16:15:37 2011 -0500
+summary:     Fix compile, and move can_kick to m_kick since nothing else uses it in the tree.
+
+changeset:   2179:56c83d36258c
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 16:06:56 2011 -0500
+summary:     Rename can_kick_deop to can_kick, can_kick_deop was never used to determine if a user could be deopped or not, thus pointless to keep calling it that.
+
+changeset:   2178:d2a65eb53b96
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 16:01:14 2011 -0500
+summary:     is_chmode_[uah] are now is_(founder|admin|halfop). Remove a bunch of functions and make them macros.
+
+changeset:   2177:59160de20a66
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 16:00:24 2011 -0500
+summary:     Add comment as to why we allow +uah on split healing even if they're disabled by this ircd.
+
+changeset:   2176:a8cdf9fc37b2
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 18 14:33:14 2011 -0500
+summary:     Replace ONLY_CHANOPS and ONLY_CHANOPSVOICED with more fine-grained flags. Also add checks to is_cmode_[ahu] to check if the ranks are enabled.
+
+changeset:   2175:45845ba56c09
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 12:58:46 2011 -0500
+summary:     Kill NEED_CRYPT.
+
+changeset:   2174:d014b363840c
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 12:28:11 2011 -0500
+summary:     Added tag sporksircd-1.3.0-beta1 for changeset f43f0b01f10d
+
+changeset:   2173:f43f0b01f10d
+branch:      trunk
+tag:         sporksircd-1.3.0-beta1
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 12:28:04 2011 -0500
+summary:     Prepare for beta1.
+
+changeset:   2172:6393569701c2
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 04:58:08 2011 -0500
+summary:     Update index.
+
+changeset:   2171:1e6a25c745a8
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 02:51:48 2011 -0500
+summary:     Update dates.
+
+changeset:   2170:70815e6c95a8
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 02:51:05 2011 -0500
+summary:     Update date.
+
+changeset:   2169:2018346818a2
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 02:47:36 2011 -0500
+summary:     Make the docs work with dblatex.
+
+changeset:   2168:41411252c97a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 02:36:53 2011 -0500
+summary:     Regular users can see when +M is set as of 1.3.0.
+
+changeset:   2167:95a1e6adf229
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 02:35:27 2011 -0500
+summary:     Add note about +p expiring.
+
+changeset:   2166:7c823a27594b
+branch:      trunk
+parent:      2154:b9d77964350a
+parent:      2165:5c97d4cfa50d
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 02:21:40 2011 -0500
+summary:     Automated merge.
+
+changeset:   2165:5c97d4cfa50d
+branch:      trunk
+parent:      2164:8611fd6b3fab
+parent:      2153:f36e1611fa62
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 02:11:08 2011 -0500
+summary:     merge
+
+changeset:   2164:8611fd6b3fab
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 02:10:12 2011 -0500
+summary:     Update reference configs
+
+changeset:   2163:b04b3555ce11
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 02:05:47 2011 -0500
+summary:     unf*ck Makefile
+
+changeset:   2162:ac0891ca756f
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 02:03:46 2011 -0500
+summary:     move channel mode extensions from m_*.c to chm_*.c in order to match already established conventions
+
+changeset:   2161:c6bc23a92368
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 02:00:56 2011 -0500
+summary:     add more force* docs
+
+changeset:   2160:b6be7a440cd8
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 01:45:37 2011 -0500
+summary:     update oper privs docs
+
+changeset:   2159:448de80ee534
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 01:37:47 2011 -0500
+summary:     Add +p to SGML umode documentation
+
+changeset:   2158:5788bb60c093
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 01:35:12 2011 -0500
+summary:     Update SGML channel mode documentation
+
+changeset:   2157:de6e2d1d92e4
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 01:34:54 2011 -0500
+summary:     cosmetic fix for SGML intro
+
+changeset:   2156:a131bb6d32cd
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 01:34:01 2011 -0500
+summary:     Update /help again.  Some modes are now modularised; others have been removed completely.
+
+changeset:   2155:75271e860c78
+branch:      trunk
+parent:      2151:3bdec2fb55cc
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Mon Jan 17 01:03:31 2011 -0500
+summary:     Add +N to /help
+
+changeset:   2154:b9d77964350a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 02:21:17 2011 -0500
+summary:     Implement blowfish support in crypt.c. This should support 2 and 2a.
+
+changeset:   2153:f36e1611fa62
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 01:31:45 2011 -0500
+summary:     Make SHA256/512 the default.
+
+changeset:   2152:0592073d6e2e
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 01:12:29 2011 -0500
+summary:     Change the cmd parameter of can_send to be an integer, an integer comparison is much more efficient than constantly banging at strcmp.
+
+changeset:   2151:3bdec2fb55cc
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 00:57:44 2011 -0500
+summary:     Fix can_send with topic.
+
+changeset:   2150:257c16c9d6b2
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 17 00:53:13 2011 -0500
+summary:     Do topic permission checking more like in charybdis.
+
+changeset:   2149:7c9216909e15
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 23:23:42 2011 -0500
+summary:     Update NEWS.
+
+changeset:   2148:e488a36a61c0
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 23:15:14 2011 -0500
+summary:     Add admin_on_channel_create option. This is geared towards networks who want to use +a but not +u, but it can be used safely alongside founder_on_channel_create.
+
+changeset:   2147:554ce799bc38
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 22:13:16 2011 -0500
+summary:     Update references to contrib/
+
+changeset:   2146:37aa3bdcc0d2
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 22:07:16 2011 -0500
+summary:     Update force* help
+
+changeset:   2145:618e7c19aa5c
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 22:03:21 2011 -0500
+summary:     Update the censor documentation.
+
+changeset:   2144:9ae1973916f8
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 21:03:27 2011 -0500
+summary:     Remove stupid easter egg module m_42.c. This joke is more than a little old. Has this module even been *touched* since the hybrid days?
+
+changeset:   2143:2a237098fab6
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 20:55:18 2011 -0500
+summary:     Update NEWS with statusmsg update.
+
+changeset:   2142:9d7e0d49693a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 20:34:05 2011 -0500
+summary:     Minor comment fix.
+
+changeset:   2141:b1c75d94a0d6
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 20:33:11 2011 -0500
+summary:     Add support for ~!% to STATUSMSG.
+
+changeset:   2140:335cbd8748ac
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 18:52:03 2011 -0500
+summary:     Minor indentation fix.
+
+changeset:   2139:f34e9fc72f38
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 12:39:48 2011 -0500
+summary:     Remove some old charybdis references that don't belong there.
+
+changeset:   2138:a72186fdcb9d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 12:38:00 2011 -0500
+summary:     Remove old libcharybdis references.
+
+changeset:   2137:4b85902c8486
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 12:36:05 2011 -0500
+summary:     Add make_override_immune option, which does what the old make_override_immune module does.
+
+changeset:   2136:c4b741a4e58f
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 12:14:46 2011 -0500
+summary:     Update NEWS.
+
+changeset:   2135:9f42c21ebdf7
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 12:06:49 2011 -0500
+summary:     Added tag sporksircd-1.3.0-alpha3 for changeset 71642eeb7b3e
+
+changeset:   2134:71642eeb7b3e
+branch:      trunk
+tag:         sporksircd-1.3.0-alpha3
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 12:06:22 2011 -0500
+summary:     Removed tag sporksircd-1.3.0-alpha3
+
+changeset:   2133:21d9cb265c43
+branch:      trunk
+parent:      2131:00e570d38ce1
+parent:      2132:0f6361bdda26
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 12:00:43 2011 -0500
+summary:     Automated merge.
+
+changeset:   2132:0f6361bdda26
+branch:      trunk
+parent:      2130:a17475ca27d2
+user:        Samuel Hoffman <minicruzer@live.com>
+date:        Sat Jan 15 23:08:02 2011 -0500
+summary:     One too many = signs.
+
+changeset:   2131:00e570d38ce1
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Jan 16 12:00:03 2011 -0500
+summary:     Fix compile due to my stupidity.
+
+changeset:   2130:a17475ca27d2
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 21:06:41 2011 -0500
+summary:     Added tag sporksircd-1.3.0-alpha3 for changeset 3f405d5a4bb3
+
+changeset:   2129:3f405d5a4bb3
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 21:06:25 2011 -0500
+summary:     alpha3, fixes a bug with list.
+
+changeset:   2128:c93e7bfd7a22
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 21:02:35 2011 -0500
+summary:     Cosmetic fixes, no functional change.
+
+changeset:   2127:17acc766bf9d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 20:57:15 2011 -0500
+summary:     Rebase m_list.c off charybdis. Apparently the patching got screwed up when I was working on this stuff last time. -.-
+
+changeset:   2126:339ecd76e139
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 15:02:53 2011 -0500
+summary:     Update changelog and configure.
+
+changeset:   2125:0738bf13c1bd
+branch:      trunk
+parent:      2122:14791cb83fa8
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 15:02:19 2011 -0500
+summary:     Added tag sporksircd-1.3.0-alpha2 for changeset 14791cb83fa8
+
+changeset:   2124:8ce5374253d3
+branch:      ban-rewrite
+parent:      1946:2b4432f5491b
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 14:58:43 2011 -0500
+summary:     Close old branch
+
+changeset:   2123:e0be6d4c9e27
+branch:      origin/freenode/ircd-seven-merge-to-3.2
+parent:      1141:92079b2022d0
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 14:54:05 2011 -0500
+summary:     Close old branch
+
+changeset:   2122:14791cb83fa8
+branch:      trunk
+tag:         sporksircd-1.3.0-alpha2
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Jan 15 14:37:04 2011 -0500
+summary:     Update pointer to sporksirc (now sporksmoo).
+
+changeset:   2121:7a13e8e69c5f
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Jan 14 19:18:10 2011 -0500
+summary:     Do not allow a user to op/admin/found themselves if they already have their status, as "already opped/admined/founded" could be because of OMODE's hack which will be unconditionally reverted after the mode change.
+
+changeset:   2120:bdbcba280539
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Jan 14 19:05:45 2011 -0500
+summary:     Unbreak libratbox compile.
+
+changeset:   2119:531184583004
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 17:18:30 2011 -0500
+summary:     Added tag sporksircd-1.3.0-alpha1 for changeset 64e1c5f67260
+
+changeset:   2118:64e1c5f67260
+branch:      trunk
+tag:         sporksircd-1.3.0-alpha1
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 17:17:45 2011 -0500
+summary:     Update news.
+
+changeset:   2117:85d96f34dc96
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 17:17:37 2011 -0500
+summary:     Removed tag sporksircd-1.3.0
+
+changeset:   2116:8f45b4c76586
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 17:14:56 2011 -0500
+summary:     Indentation fixes.
+
+changeset:   2115:d7ab5df5709a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 17:11:02 2011 -0500
+summary:     Make our crypt the default, as it is in upstream.
+
+changeset:   2114:d41e2b33d665
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 17:02:07 2011 -0500
+summary:     Added tag sporksircd-1.3.0 for changeset 9efa73c4907f
+
+changeset:   2113:9efa73c4907f
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 16:54:51 2011 -0500
+summary:     $Id$ is gone forever. Not checked: libratbox, but I'm not sure I care about removing the $Id$ tags lurking there.
+
+changeset:   2112:9fc22f55359d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 16:50:16 2011 -0500
+summary:     Remove obsolete tools.
+
+changeset:   2111:6cf43063143a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 16:03:53 2011 -0500
+summary:     Reformat CREDITS.
+
+changeset:   2110:aaaa6b6d8cea
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 16:03:35 2011 -0500
+summary:     Update README.first, reflecting platforms we've actually tested.
+
+changeset:   2109:b72a45e80924
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 16:02:53 2011 -0500
+summary:     Update FAQ.
+
+changeset:   2108:49b9e9501708
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 16:02:21 2011 -0500
+summary:     Modernise INSTALL a bit, remove some ircd-ratbox and charybdis references and redirect it to sporksircd.
+
+changeset:   2107:ca9313e0817f
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 15:48:24 2011 -0500
+summary:     Update news.
+
+changeset:   2106:cd144c557711
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 15:40:08 2011 -0500
+summary:     Add license note.
+
+changeset:   2105:4853a773c545
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 14:06:32 2011 -0500
+summary:     Replace ugly ircd-seven hack crap with override module. Note that this needs more testing, as a lot of stuff was changed (mostly removed).
+
+changeset:   2104:56938774cdae
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 14:05:09 2011 -0500
+summary:     Add bantool to make clean.
+
+changeset:   2103:7be45ceb3b38
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 13:59:43 2011 -0500
+summary:     Fix up m_force* logging.
+
+changeset:   2102:c1527e28ceb4
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 09:14:19 2011 -0500
+summary:     Remove nickTS from extended-join.
+
+changeset:   2101:690538d3bd50
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 09:12:38 2011 -0500
+summary:     Fix extended-join not sending any joins at all.
+
+changeset:   2100:db9d52f29924
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Jan 11 09:02:42 2011 -0500
+summary:     Run indent on this.
+
+changeset:   2099:f704a01eb850
+branch:      trunk
+user:        Samuel Hoffman <minicruzer@live.com>
+date:        Mon Jan 10 21:06:53 2011 -0500
+summary:     OJOIN: warn operator of unrecognized op prefixes when called /OJOIN <prefix>#channel
+
+changeset:   2098:287339383c8d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 10 17:36:32 2011 -0500
+summary:     Make the use_censor configuration option work again.
+
+changeset:   2097:a506eeeb95f3
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 10 13:27:32 2011 -0500
+summary:     hunt_server: Disallow wildcarded nicknames.
+
+changeset:   2096:3839ea5946f6
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 10 13:25:10 2011 -0500
+summary:     Remove NOSUCHCENSOR notices. They end up being sent to the client for each server, eugh.
+
+changeset:   2095:3958f089d987
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 10 13:22:48 2011 -0500
+summary:     Remove the censor module, we're not really ready for something like this to be done properly yet... we need a lot more work.
+
+changeset:   2094:32912b1a79da
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 10 12:31:54 2011 -0500
+summary:     Restore old changes after merge.
+
+changeset:   2093:97804fb22ddd
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 10 12:18:46 2011 -0500
+summary:     Same story here.
+
+changeset:   2092:65870f6eb70c
+branch:      trunk
+user:        Keith Buck <mr_flea@esper.net>
+date:        Wed Jan 05 18:57:27 2011 -0800
+summary:     Implement operspy for /LIST.
+
+changeset:   2091:d0b2d218bd58
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Mon Jan 10 12:17:25 2011 -0500
+summary:     Temporarily revert some shadow stuff in preparation for an import.
+
+changeset:   2090:2767fe6480ae
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 21:30:40 2010 -0500
+summary:     Rework that last commit a little...
+
+changeset:   2089:8d0ae3f2265f
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 21:21:04 2010 -0500
+summary:     Augment the (misnamed) can_kick_deop to allow hotplugging.
+
+changeset:   2088:1d8604eaf44a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 20:31:35 2010 -0500
+summary:     Use get_channel_access in m_topic.
+
+changeset:   2087:9beec4976e45
+branch:      trunk
+parent:      2084:3852bd552bac
+parent:      2086:005e037c7d94
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 20:25:33 2010 -0500
+summary:     Merge.
+
+changeset:   2086:005e037c7d94
+branch:      trunk
+user:        Samuel Hoffman <minicruzer@live.com>
+date:        Fri Dec 31 20:15:08 2010 -0500
+summary:     update credits
+
+changeset:   2085:e0f9fae56330
+branch:      trunk
+parent:      2083:b06c451dc620
+user:        Samuel Hoffman <minicruzer@live.com>
+date:        Fri Dec 31 19:55:55 2010 -0500
+summary:     OJOIN: make sure we support the ojoin prefix being requested before joining the oper to the channel.
+
+changeset:   2084:3852bd552bac
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 20:25:13 2010 -0500
+summary:     Reshuffle around some flags.
+
+changeset:   2083:b06c451dc620
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 18:03:11 2010 -0500
+summary:     Clarify something.
+
+changeset:   2082:3d3888c89604
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 18:00:53 2010 -0500
+summary:     Add comments how to use whitespace.
+
+changeset:   2081:3a9ddc39df61
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 17:57:41 2010 -0500
+summary:     Add style document to tell prospective coders what to do.
+
+changeset:   2080:22db2943b948
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 17:31:37 2010 -0500
+summary:     Fix indentation in m_ojoin.c
+
+changeset:   2079:954893387914
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 17:28:43 2010 -0500
+summary:     Minor indentation and style fix of sam's fix.
+
+changeset:   2078:9eb4d232e526
+branch:      trunk
+parent:      2077:559ac5ff1ba9
+parent:      2074:18fda9b0ea99
+user:        Samuel Hoffman <minicruzer@live.com>
+date:        Fri Dec 31 17:25:21 2010 -0500
+summary:     Merge.
+
+changeset:   2077:559ac5ff1ba9
+branch:      trunk
+user:        Samuel Hoffman <minicruzer@live.com>
+date:        Fri Dec 31 17:00:56 2010 -0500
+summary:     Support and document OJOIN prefix ~ if the config allows.
+
+changeset:   2076:364538c1698c
+branch:      trunk
+user:        Samuel Hoffman <minicruzer@live.com>
+date:        Fri Dec 31 03:25:47 2010 -0500
+summary:     Double quotes should be escaped so they are printed as desired in genssl.sh
+
+changeset:   2075:81cd4f1fcb9f
+branch:      trunk
+parent:      2073:62184aab4676
+user:        Samuel Hoffman <minicruzer@live.com>
+date:        Fri Dec 31 03:24:13 2010 -0500
+summary:     dir was not initialized properly
+
+changeset:   2074:18fda9b0ea99
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 31 16:51:55 2010 -0500
+summary:     Happy new year.
+
+changeset:   2073:62184aab4676
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Dec 26 22:49:12 2010 -0500
+summary:     Update FAQ.
+
+changeset:   2072:cb5e51243c92
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Dec 26 22:46:08 2010 -0500
+summary:     Revert chmode.h, I didn't mean to commit this.
+
+changeset:   2071:2c9e712629b0
+branch:      trunk
+parent:      2066:575a8a6882fa
+parent:      2070:e160c7382ac6
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Dec 26 22:45:42 2010 -0500
+summary:     Merge.
+
+changeset:   2070:e160c7382ac6
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Sat Dec 25 13:51:57 2010 -0500
+summary:     Update FAQ question/answer to mention the patch for atheme
+
+changeset:   2069:cd0062e4c34c
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Sat Dec 25 13:49:12 2010 -0500
+summary:     cosmetic fix: Blowfish doesn't use CamelCase
+
+changeset:   2068:be4d149abedd
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Sat Dec 25 13:40:35 2010 -0500
+summary:     Update obsolete reference to ircd/contrib
+
+changeset:   2067:0e83cbcdf974
+branch:      trunk
+parent:      2065:51f1aae11627
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Sat Dec 25 13:39:17 2010 -0500
+summary:     Remove burst_klines from reference.conf
+
+changeset:   2066:575a8a6882fa
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sun Dec 26 22:42:22 2010 -0500
+summary:     Properly increment pargs in a place.
+
+changeset:   2065:51f1aae11627
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 07:12:00 2010 -0500
+summary:     Minor cleanups.
+
+changeset:   2064:ca7da632ece7
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 07:08:19 2010 -0500
+summary:     Optimise some stuff.
+
+changeset:   2063:d7257a7121b0
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 04:32:04 2010 -0500
+summary:     Also do some empty string checks in msg_channel_opmod.
+
+changeset:   2062:f89fcd52f0cd
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 04:30:14 2010 -0500
+summary:     Add check for an empty string after the can_send hook runs.
+
+changeset:   2061:743aa930818d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 04:26:32 2010 -0500
+summary:     Make the can_send hook far more flexible, and update modules to use it.
+
+changeset:   2060:7be588f88fd4
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 00:51:01 2010 -0500
+summary:     Remove burst_klines from list.
+
+changeset:   2059:52a7a13693d1
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 00:48:41 2010 -0500
+summary:     Add copyright info to ip_cloaking.c
+
+changeset:   2058:1e99f3d0e036
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 00:46:13 2010 -0500
+summary:     Update a ton of docs.
+
+changeset:   2057:160bbe994efd
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 00:18:36 2010 -0500
+summary:     Same story for ssld.
+
+changeset:   2056:30fd5658ddf5
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 00:17:49 2010 -0500
+summary:     Remove some old ircd-ratbox refs in bantool.
+
+changeset:   2055:579a8cccc44a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 00:16:46 2010 -0500
+summary:     Change some old charybdis macros to sporksircd.
+
+changeset:   2054:382c25c7581a
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 00:14:07 2010 -0500
+summary:     Per upstream, burst_klines is obsolete.
+
+changeset:   2053:a27e60959571
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 25 00:10:22 2010 -0500
+summary:     Clean up includes.
+
+changeset:   2052:eaa8e659908d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 24 22:31:59 2010 -0500
+summary:     Some cleanups.
+
+changeset:   2051:b18ed8b39c0c
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 24 22:19:20 2010 -0500
+summary:     Make mkpasswd require at least two parameters, not one.
+
+changeset:   2050:99d523a69fd3
+branch:      trunk
+parent:      2047:97c102557def
+parent:      2049:8048414efb15
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 24 00:18:15 2010 -0500
+summary:     Automated merge.
+
+changeset:   2049:8048414efb15
+branch:      trunk
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Thu Dec 23 22:27:47 2010 -0500
+summary:     Add make_override_immune.c to extensions README
+
+changeset:   2048:5755bf611557
+branch:      trunk
+parent:      2046:b6e3250ea7bc
+user:        Lee T. Starnes <lstarnes@sporksirc.net>
+date:        Thu Dec 23 22:07:49 2010 -0500
+summary:     Update cmmode help to include +M (for users) and remove the old reference to users not being able to see +M (for opers)
+
+changeset:   2047:97c102557def
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Fri Dec 24 00:17:47 2010 -0500
+summary:     Cleanup the exempt_cmode crap, and remove exempt_cmode_D (we don't use that anymore).
+
+changeset:   2046:b6e3250ea7bc
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 22 23:15:06 2010 -0500
+summary:     Possible fix for the +m not working issue, caused by a misplaced return statement. This bug likely exists in charybdis trunk.
+
+changeset:   2045:0b0a8486bc29
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 22 22:51:11 2010 -0500
+summary:     Backout previous changes. We'll do this in a branch because it turns out it's a bigger job than I thought.
+
+changeset:   2044:a296578431ec
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 22 21:40:07 2010 -0500
+summary:     Add libltdl to the tree and port modules.c to it. The rationale for this is to gain Windows support.
+
+changeset:   2043:adae58576a8d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 22 15:27:43 2010 -0500
+summary:     Update NEWS.
+
+changeset:   2042:eed5f20e20e4
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 22 02:15:00 2010 -0500
+summary:     Add mr_flea to the list of charybdis contributors.
+
+changeset:   2041:822c0b6f8796
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Dec 21 22:47:17 2010 -0500
+summary:     Minor cleanups.
+
+changeset:   2040:9e5e92d660a6
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Dec 21 22:42:05 2010 -0500
+summary:     Import some cleanups to m_join from hybrid.
+
+changeset:   2039:3b36cf34f6a2
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Dec 21 22:40:56 2010 -0500
+summary:     Fix API change for sendto_common_channels_local in forcenick.
+
+changeset:   2038:145671a1ef2c
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Dec 21 22:37:40 2010 -0500
+summary:     Remove reference to chm_hidden.
+
+changeset:   2037:c7d2f225096d
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Dec 21 21:18:43 2010 -0500
+summary:     Remove chm_hidden, it's too abusive and too useless.
+
+changeset:   2036:2df95547c39e
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Tue Dec 21 20:28:31 2010 -0500
+summary:     Clean up remove_our_modes with some stuff from hybrid. Note that this needs more testing than I can give it atm.
+
+changeset:   2035:65b4adbd3e84
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 18 14:29:52 2010 -0500
+summary:     s/condemn/condone/
+
+changeset:   2034:f8cb7c291023
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Sat Dec 18 14:28:58 2010 -0500
+summary:     Update messages.tab as TheTosh has been akilled.
+
+changeset:   2033:8fa54b5874b7
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Dec 16 08:50:11 2010 -0500
+summary:     libratbox: Unbreak compile.
+
+changeset:   2032:361c53544737
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Thu Dec 16 00:35:12 2010 -0600
+summary:     account-notify spec: with the extended-join capability, doing a WHO on new users is not necessary.
+
+changeset:   2031:a520199b7e42
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Thu Dec 16 00:32:48 2010 -0600
+summary:     Accountname should not be prefixed with a colon to allow future expansion.
+
+changeset:   2030:0467305a23db
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Thu Dec 16 00:24:54 2010 -0600
+summary:     Add extended-join client capability.
+
+changeset:   2029:a6e0873af5bb
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Thu Dec 16 00:19:24 2010 -0600
+summary:     Add sendto_channel_local_with_capability().
+
+changeset:   2028:ea17e5ec5c11
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Dec 16 08:38:23 2010 -0500
+summary:     Merge in some stuff from charybdis that had to be done by hand.
+
+changeset:   2027:2b5b359f5c47
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Thu Dec 16 00:09:29 2010 -0600
+summary:     Add send_channel_join().
+
+changeset:   2026:3df627088c5f
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Wed Dec 15 23:59:47 2010 -0600
+summary:     Update specification.
+
+changeset:   2025:2f4292e39172
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Wed Dec 15 23:38:35 2010 -0600
+summary:     Add specification for the account-notify protocol extension.
+
+changeset:   2024:d1f97289c3ab
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Wed Dec 15 23:04:57 2010 -0600
+summary:     Rough implementation of the new account-notify client capability.
+
+changeset:   2023:9a6e56307040
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Wed Dec 15 22:55:05 2010 -0600
+summary:     Add capability parameter to sendto_common_channels_local() and sendto_common_channels_local_butone().
+
+changeset:   2022:751c83814f29
+branch:      trunk
+user:        Jilles Tjoelker <jilles@stack.nl>
+date:        Wed Dec 15 21:49:47 2010 +0100
+summary:     Remove redundant prototypes in src/ircd_lexer.l.
+
+changeset:   2021:51e195cabede
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Thu Dec 16 06:13:20 2010 -0500
+summary:     Fix warning.
+
+changeset:   2020:f03de1ae767f
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Tue Dec 14 21:28:35 2010 -0600
+summary:     ssld: Request fingerprint when connecting to the server, not just on inbound connections.
+
+changeset:   2019:233cca772fde
+branch:      trunk
+user:        William Pitcock <nenolod@atheme.org>
+date:        Tue Dec 14 21:25:44 2010 -0600
+summary:     Correct error message involving no fingerprint credentials or password credentials being available.
+
+changeset:   2018:38e66e474023
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 15 16:19:59 2010 -0500
+summary:     Allow oper host changes by default.
+
+changeset:   2017:04c318997824
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 15 16:19:09 2010 -0500
+summary:     #define out FSAY and FACTION; if you want these commands, just #define ABUSIVE_ROLEPLAY in your cflags.
+
+changeset:   2016:201a9beb32cd
+branch:      trunk
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 15 15:00:42 2010 -0500
+summary:     Send ACTIONs correctly.
+
+changeset:   2015:753e6d6e486f
+branch:      trunk
+tag:         sporksircd-1.2.3
+user:        Elizabeth Jennifer Myers <elizabeth@sporksirc.net>
+date:        Wed Dec 15 14:13:06 2010 -0500
+summary:     Begin 1.3.0 release cycle.
+

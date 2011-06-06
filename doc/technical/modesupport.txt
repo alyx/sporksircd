@@ -1,0 +1,82 @@
+MODESUPPORT specification
+Elizabeth J. Myers
+25 Feb 2011
+
+===============================================================================
+MODESUPPORT is a mechanism that is used to prevent networks from having
+desynced modes as a result of having a mismatched supported mode set or as the
+result of a change in supported modes.
+
+===============================================================================
+1) Background
+With the advent of modular list modes in SporksIRCD, a mechanism to ensure list
+and parameterised modes stay in sync is required. List modes are bursted
+automatically on net join, but will not be kept or relayed by servers which do
+not support them. Additionally, at runtime, list modes can be loaded. In this
+case, list modes are not bursted. There is also the problem of having
+consistent modes across the network (inconsistent modes can lead to confusion).
+
+Several solutions were considered, including bursting the modes (which server
+do we get the modes from? This also does not solve the consistency problem),
+refusing to link servers with incompatible modules (inspircd-style), and
+bursting supported modes on net join (some modules may be desired to be local,
+and how do we define incompatible modules?). In the end, we went with the third
+solution.
+
+===============================================================================
+2) Specification
+MODESUPPORT is the solution to the consistency problem and the mismatched modes
+problem. The MODESUPPORT message is of the following format:
+
+[:SID] MS [A B C D UMODES]
+
+Where SID is the server ID sending this, A are the class A modes, B are the
+class B modes, and so on. The mode classes are as follows:
+
+Class A: modes that take a parameter, and add or remove items to/from a list.
+         +beqI are examples of such modes.
+Class B: modes that change channel settings, and take a parameter when being
+         set and unset. +k is an example of such a mode.
+Class C: modes that change channel settings, and take a parameter only when
+         being set. +jl are examples of such modes.
+Class D: modes that change channel settings, and take no parameters. This is
+         the default class. Examples of such modes include +imnpst.
+Umodes : these are modes for users (not channels). Consistency is generally
+         desired for these also.
+
+Note a parameterless MODESUPPORT implies a query, and a MODESUPPORT will be
+sent to the client who sent it.
+
+The message is sent only when the server advertises it supports MODESUPPORT in
+its capabilities (cap MS). The servers exchange MODESUPPORTs on net join. Any
+server which does not support MODESUPPORT is not sent it (but it may cause
+desyncs, so be advised of mismatched modes). If the MODESUPPORT recieved from
+the other end does not match, it is ircd dependent on what happens next. As of
+this writing, SporksIRCD will drop the link if class A, B, or C do not match,
+but will only issue a warning if class D does not match (as that is the default
+class and few ill-effects will result from a mismatch there, but it is still
+not necessarily a desired mode of operation).
+
+MODESUPPORT is also to be sent (only if the server supports cap MS) upon a
+change of modes. At the moment, SporksIRCD issues them on module (un/re)load
+and restart. In this case, it is to be broadcasted to all servers to ensure
+consistency. An SID is to be sent with the MODESUPPORT message for broadcasts.
+
+Implementation note: SporksIRCD avoids unnecessary splits by not sending
+MODESUPPORT on global module reloads. The reason for this is to avoid splitting
+the network needlessly for a global module (re/un)load/restart, as the state
+will remain consistent. It is recommended that implementations follow this.
+
+===============================================================================
+3) Notes
+
+At the moment, sending a MODESUPPORT is optional (but will usually be sent to
+the linking server on burst), even if advertised in CAPAB. Implementations are
+advised to send this, however, and in the future it may be made required if the
+other end advertises it supports MODESUPPORT.
+
+Note that at the moment on SporksIRCD, unless CAPAB is sent before server,
+MODESUPPORT may not be sent. This is a bug. SporksIRCD will send CAPAB before
+SERVER is sent; however, it is not a violation of the TS specification to send
+it after. This will eventually be remedied.
+

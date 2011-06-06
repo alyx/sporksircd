@@ -1,0 +1,56 @@
+- ratbox-respond -
+------------------
+ratbox-respond takes the challenge from the server and creates a valid 
+response to pass back to the server.
+
+ratbox-respond will run either interactively, or can have input piped to it
+through stdin.
+
+- Compiling -
+-------------
+Run:
+	./configure
+	make
+
+This will generate a 'ratbox-respond' binary, which you may place wherever
+you like. If configure does not detect your openssl installation, you may
+pass it the directory where it is installed to via --enable-openssl, this
+should be the base directory which has lib/ and include/openssl/ within it:
+	./configure --enable-openssl=/path/to/opensslbase
+
+
+- ratbox-respond usage -
+------------------------
+ratbox-respond takes only one argument, the path to your private key:
+	./ratbox-respond /path/to/private.key
+
+
+- Interactive mode -
+--------------------
+ratbox-respond runs in interactive mode when it detects theres a tty
+attached (eg, you run ./ratbox-respond from a normal shell).  This will
+prompt for keyphrases and the challenge, and will generate the output to be
+given to ircd.
+
+
+- Non-interactive mode -
+------------------------
+To allow for ratbox-respond to be called from a script, input may be piped
+to ratbox-respond through stdin.  The format of the input is:
+	keyphrase\nchallenge\n
+
+If there is no keyphrase, the \n preceding the challenge from ircd must
+still be sent.  Output will be given on stdout, and will be just the
+response needed to be sent back to ircd.
+
+It is required that input is piped for security reasons, as allowing the
+keyphrase to appear in ps is insecure.
+
+An example to illustrate this is:
+	echo "keyphrase\nchallenge" | /path/to/ratbox-respond /path/to/key
+Though this is equally insecure, as the echo will appear in process lists.
+It can be done better in perl for example, by using the open2() function,
+see client-scripts/challenge-xchat.pl for an implementation.
+
+-- 
+- $Id: README 21696 2006-01-14 22:30:32Z leeh $ -

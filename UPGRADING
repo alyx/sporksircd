@@ -1,0 +1,49 @@
+This is the documentation of major configuration/other changes to SporksIRCD
+you should be aware of before upgrading your ircd. If anything is not covered
+here, this is a bug and should be reported to the developers.
+
+Changes between 1.3 and 1.4:
+
+= Modules
+- botmode.so, ip_cloaking.so, and override.so have had usm_ prepended to their
+  names, in line with the chm_* modes (these are USer Modes).
+- Censor is now a module, as well as the module to make it oper only (see
+  chm_censor.so and chm_censor_operonly.so). Semantics are otherwise the same.
+- m_chgflags.so has been added to change a user's auth flags (backported to
+  1.3 but unsupported in that version).
+- m_forcequit.so has been moved to unsupported. See the directions in
+  unsupported/ for more information.
+- m_remove.so exists as a module now for ircd-seven style /remove. Its use is
+  discouraged but is nonetheless supported.
+- sno_channeljoin.so has been moved out of unsupported and can be used to view
+  join/part notices.
+
+= Configuration
+- oper:grant is now a required privset to use override.
+- privset blocks now support an operstring field, which sets the default oper
+  string for that class. Note that operstring fields in oper blocks will
+  override this.
+- Account fields are now supported in oper blocks. This means that the user's
+  account name must match the given account name in order to be able to oper
+  up.
+- caps_threshold in the channel block has been moved to the blockcaps {} block
+  as the threshold option. The semantics are otherwise the same.
+- max_censors and max_censors_large have been moved to the censor {} block with
+  the same semantics as before.
+- expire_override_time and make_override_immune have been moved to the override
+  {} block as the expire_time and make_immune settings, with the same
+  semantics.
+- Flood control settings are now configurable. client_flood_burst_rate,
+  client_flood_burst_max, client_flood_message_time, client_flood_message_num
+  are all configurable settings. The defaults for them are considered sane and
+  should not be changed unless you know what you are doing. However,
+  client_flood_max_lines may be tweaked and does what the old (removed)
+  client_flood option does.
+
+= Miscellaneous
+- DES is deprecated and will spew warnings if it is being used for passwords.
+  Please upgrade your passwords to a stronger function (DES is easily cracked).
+- IPv6 blacklists are now supported via a type parameter (must come before the
+  reason). Note not many blacklists support IPv6 yet and thus the default is
+  still IPv4.
+

@@ -1,0 +1,50 @@
+SporksIRCD is a fork of ShadowIRCD with features that are required by the
+SporksMoo IRC network, with an emphasis on clean code. 
+ 
+The SporksIRCD team is listed in nick-alphabetical order:
+ 
+awilcox, Andrew R. Wilcox, <awilcox -at- wilcox-tech.com>, project deputy
+Elizacat, Elizabeth J. Myers, <elizabeth -at- sporksmoo.net>, head of project
+lstarnes, Lee T. Starnes, <lstarnes -at- sporksmoo.net>, project deputy
+miniCruzer, Samuel J. Hoffman, <minicruzer -at- live.com>, contributor
+ 
+SporksIRCD continues to pull changes from all the aforementioned projects
+below. 
+ 
+The SporksIRCD project would like to give thanks to the following projects; the
+developers of all the projects below are far too numerous to name, but our
+thanks goes to them.
+ 
+ShadowIRCD:
+ShadowIRCd 6 is a modern restart of the old ShadowIRCd project based on
+Charybdis with a few additional features to make it appeal more to more users.
+ 
+Some ShadowIRCd 6 features such as remote RESTART, DIE, and MOD* commands were
+borrowed from ircd-seven.
+ 
+ShadowIRCD's credits can be found at:
+http://hg.atheme.org/unofficial/shadowircd/unofficial/shadowircd/file/tip/CREDITS
+ 
+ircd-seven:
+ircd-seven is developed to meet the policy needs of the freenode IRC network.
+The ircd is based closely on Charybdis, which in turn is a fork of ircd-ratbox.
+ 
+ircd-seven's credits can be found at:
+http://dev.freenode.net/ircd-seven/browser/CREDITS
+ 
+Charybdis:
+Charybdis started as an evolution from ircd-ratbox. Its development is led by a
+team of dedicated developers who have put a lot of time into the project, and
+it has seen use on a variety of different network configurations.
+ 
+Charybdis's credits can be found at:
+http://hg.atheme.org/charybdis/charybdis/file/tip/CREDITS
+ 
+ircd-ratbox: 
+ircd-ratbox is an evolution where ircd-hybrid left off around version 7-rc1.
+ 
+ircd-ratbox's credits can be found at:
+http://svn.ratbox.org/svnroot/ircd-ratbox/trunk/CREDITS
+ 
+Visit the SporksIRCD channel on IRC at: irc.sporksmoo.net #sporksircd
+ 

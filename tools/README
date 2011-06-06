@@ -1,0 +1,11 @@
+A directory of support programs for ircd.
+
+respond         - utility for challenge-response authentication. (not built by
+                  default; see respond/challenge.txt for details)
+genssl.sh       - a small program used for generating a public and private
+                  key pair
+mkpasswd.c      - makes password for O lines
+viconf.c        - edit your conf file without having to chdir su etc. etc.
+                  also locks the file if file locking is used.
+                  viconf is also installed with hard links as vimotd
+                  to edit those files in a locked mode.

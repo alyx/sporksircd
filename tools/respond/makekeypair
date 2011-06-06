@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# Copyright (C) 2006 ircd-ratbox development team
+# This code is in the public domain.
+
+openssl "no-aes256-cbc" >/dev/null
+if [ $? != 1 ]; then
+	openssl "no-des3" >/dev/null
+	if [ $? != 1 ]; then
+		echo "Unable to find a suitable encryption for assigning a password to the key"
+		echo "If you wish to generate a key without a passphrase, run:"
+		echo "   openssl genrsa -out private.key 2048"
+		echo "   openssl rsa -in private.key -out public.key -pubout"
+		echo "Though this is NOT recommended for security reasons."
+		exit
+	fi
+	enc="-des3"
+else
+	enc="-aes256"
+fi
+
+openssl genrsa -out private.key $enc 2048
+
+echo "Generating RSA public key..."
+openssl rsa -in private.key -out public.key -pubout
